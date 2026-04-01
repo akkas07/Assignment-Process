@@ -1,25 +1,24 @@
 import React, { useState } from "react";
 import "./App.css";
 
-// All Components Import
+// Components
 import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
 import Stats from "./components/Stats";
 import Products from "./components/Products";
 import HowItWorks from "./components/HowItWorks";
 import Pricing from "./components/Pricing";
-import Footer from "./components/Footer";       
+import Footer from "./components/Footer";
 import CartModal from "./components/CartModal";
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
 
-  // ================== Cart Functions ==================
+  // Add product to cart
   const addToCart = (product) => {
     setCartItems((prev) => {
       const existingItem = prev.find((item) => item.id === product.id);
-
       if (existingItem) {
         return prev.map((item) =>
           item.id === product.id
@@ -32,17 +31,18 @@ function App() {
     });
   };
 
+  // Remove product from cart
   const removeFromCart = (id) => {
     setCartItems((prev) => prev.filter((item) => item.id !== id));
   };
 
-  // Total Price
+  // Total price calculation
   const totalPrice = cartItems.reduce(
     (sum, item) => sum + item.price * (item.quantity || 1),
     0
   );
 
-  // Cart Count for Navbar & Products
+  // Cart count calculation
   const cartCount = cartItems.reduce(
     (total, item) => total + (item.quantity || 1),
     0
@@ -50,11 +50,13 @@ function App() {
 
   return (
     <div className="App">
+      {/* Navbar with Cart count */}
       <Navbar 
         cartCount={cartCount} 
         onCartClick={() => setIsCartOpen(true)} 
       />
 
+      {/* Sections */}
       <Banner />
       <Stats />
       <Products addToCart={addToCart} cartCount={cartCount} />
