@@ -12,6 +12,8 @@ const products = [
   { id: 8, icon: "🔍", badge: "NEW", title: "SEO Mastery Toolkit", price: 35, period: "/Mo" },
 ];
 
+
+
 function Products({ addToCart }) {
   return (
     <section className="products">
@@ -19,6 +21,8 @@ function Products({ addToCart }) {
         <h2>Premium Digital Tools</h2>
         <p>Choose from our curated collection of premium products.</p>
       </div>
+
+
 
       <div className="products-grid">
         {products.map((product) => (

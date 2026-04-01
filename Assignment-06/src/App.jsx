@@ -17,6 +17,8 @@ function App() {
     setCartCount((prev) => prev + 1);
   };
 
+
+  
   const removeFromCart = (id) => {
     setCartItems((prev) => prev.filter((item) => item.id !== id));
     setCartCount((prev) => Math.max(0, prev - 1));
