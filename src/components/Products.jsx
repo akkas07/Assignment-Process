@@ -52,6 +52,30 @@ const products = [
     features: ["100+ templates", "ATS optimization", "Export to PDF"],
     icon: "📄"
   },
+
+  {
+    id: 5,
+    name: "Seo Optimizer Pro",
+    price: 75,
+    period: "One-Time",
+    badge: "BEST SELLER",
+    description: "A professional SEO Expart  Groth Your Channels.",
+    features: ["100+ templates", "ATS optimization", "Export to PDF"],
+    icon: "📄"
+  },
+
+
+    {
+    id: 5,
+    name: "Canva   Desaign Builder Pro",
+    price: 85,
+    period: "One-Time",
+    badge: "NEW",
+    description: "Create professional   Canva Desaign and cover letters that land interviews.",
+    features: ["100+ templates", "ATS optimization", "Export to PDF"],
+    icon: "📄"
+  },
+
   {
     id: 6,
     name: "Social Media Kit",
@@ -84,9 +108,9 @@ const Products = ({ addToCart, cartCount }) => {
 
             <div className="product-icon">{product.icon}</div>
             
-            <h3 className="product-name">{product.name}</h3>
-            <p className="product-description">{product.description}</p>
-
+             <h3 className="product-name">{product.name}</h3>
+              <p className="product-description">{product.description}</p>
+ 
             <div className="price">
               ${product.price}
               <span className="period">/{product.period}</span>

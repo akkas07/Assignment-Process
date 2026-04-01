@@ -12,10 +12,10 @@ const Navbar = ({ cartCount, onCartClick }) => {
         </div>
 
         <ul className="nav-menu">
-          <li><a href="#products">Products</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
+           <li><a href="#products">Products</a></li>
+             <li><a href="#features">Features</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
 
@@ -25,7 +25,7 @@ const Navbar = ({ cartCount, onCartClick }) => {
             <span className="cart-badge">{cartCount}</span>
           </div>
           
-          <a href="#login" className="login-btn">Login</a>
+           <a href="#login" className="login-btn">Login</a>
           <a href="#get-started" className="get-started-btn">Get Started</a>
 
           <button 
@@ -37,14 +37,15 @@ const Navbar = ({ cartCount, onCartClick }) => {
         </div>
       </div>
 
+
       {/* Mobile Menu */}
       {isOpen && (
         <ul className="mobile-menu">
-          <li><a href="#products" onClick={() => setIsOpen(false)}>Products</a></li>
-          <li><a href="#features" onClick={() => setIsOpen(false)}>Features</a></li>
-          <li><a href="#pricing" onClick={() => setIsOpen(false)}>Pricing</a></li>
-          <li><a href="#testimonials" onClick={() => setIsOpen(false)}>Testimonials</a></li>
-          <li><a href="#faq" onClick={() => setIsOpen(false)}>FAQ</a></li>
+            <li><a href="#products" onClick={() => setIsOpen(false)}>Products</a></li>
+            <li><a href="#features" onClick={() => setIsOpen(false)}>Features</a></li>
+              <li><a href="#pricing" onClick={() => setIsOpen(false)}>Pricing</a></li>
+             <li><a href="#testimonials" onClick={() => setIsOpen(false)}>Testimonials</a></li>
+             <li><a href="#faq" onClick={() => setIsOpen(false)}>FAQ</a></li>
           <li><a href="#login" onClick={() => setIsOpen(false)}>Login</a></li>
           <li>
             <a href="#get-started" 

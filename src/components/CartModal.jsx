@@ -15,12 +15,16 @@ const CartModal = ({
       <div className="cart-modal" onClick={(e) => e.stopPropagation()}>
         
         {/* Header */}
+
+  
+  
         <div className="cart-header">
           <h2>Your Cart</h2>
           <button className="close-btn" onClick={onClose}>✕</button>
         </div>
 
         {/* Cart Items */}
+
         <div className="cart-items">
           {cartItems.length === 0 ? (
             <p className="empty-cart">Your cart is empty</p>
@@ -45,7 +49,8 @@ const CartModal = ({
           )}
         </div>
 
-        {/* Total + Checkout */}
+    
+
         {cartItems.length > 0 && (
           <>
             <div className="cart-total">

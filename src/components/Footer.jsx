@@ -5,7 +5,8 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* Left Side - Brand */}
+      
+
         <div className="footer-brand">
           <h2>DigiTools</h2>
           <p>
@@ -15,7 +16,8 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Product Links */}
+
+   
         <div className="footer-column">
           <h3>Product</h3>
           <ul>
@@ -26,7 +28,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Company Links */}
+    
         <div className="footer-column">
           <h3>Company</h3>
           <ul>
@@ -37,7 +39,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Resources Links */}
         <div className="footer-column">
           <h3>Resources</h3>
           <ul>
@@ -48,7 +49,9 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Social Links */}
+
+
+     
         <div className="footer-column">
           <h3>Social Links</h3>
           <div className="social-icons">
@@ -59,7 +62,9 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Bar */}
+
+
+  
       <div className="footer-bottom">
         <div className="footer-bottom-content">
           <p>© 2026 DigiTools. All rights reserved.</p>

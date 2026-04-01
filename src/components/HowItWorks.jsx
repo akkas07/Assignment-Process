@@ -33,10 +33,12 @@ function HowItWorks() {
       <div className="steps-grid">
         {steps.map((step) => (
           <div key={step.id} className="step-card">
+       
             <div className="step-number">{step.id}</div>
             
-            <div className="step-icon">
-              <img src={step.icon} alt={step.title} />
+        
+             <div className="step-icon">
+               <img src={step.icon} alt={step.title} />
             </div>
 
             <h3>{step.title}</h3>

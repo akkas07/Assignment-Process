@@ -15,7 +15,9 @@ function App() {
   const [cartItems, setCartItems] = useState([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
 
-  // Add product to cart
+// Add to cart function..../
+
+
   const addToCart = (product) => {
     setCartItems((prev) => {
       const existingItem = prev.find((item) => item.id === product.id);
@@ -31,18 +33,20 @@ function App() {
     });
   };
 
-  // Remove product from cart
+
+
+  
   const removeFromCart = (id) => {
     setCartItems((prev) => prev.filter((item) => item.id !== id));
   };
 
-  // Total price calculation
+
   const totalPrice = cartItems.reduce(
     (sum, item) => sum + item.price * (item.quantity || 1),
     0
   );
 
-  // Cart count calculation
+ 
   const cartCount = cartItems.reduce(
     (total, item) => total + (item.quantity || 1),
     0
@@ -50,7 +54,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* Navbar with Cart count */}
+      {/* Navbar */}
       <Navbar 
         cartCount={cartCount} 
         onCartClick={() => setIsCartOpen(true)} 
@@ -58,16 +62,16 @@ function App() {
 
       {/* Sections */}
       <Banner />
-      <Stats />
-      <Products addToCart={addToCart} cartCount={cartCount} />
-      <HowItWorks />
+        <Stats />
+        <Products addToCart={addToCart} cartCount={cartCount} />
+       <HowItWorks />
       <Pricing />
 
       {/* Cart Modal */}
       <CartModal 
         isOpen={isCartOpen}
         onClose={() => setIsCartOpen(false)}
-        cartItems={cartItems}
+          cartItems={cartItems}
         removeFromCart={removeFromCart}
         totalPrice={totalPrice}
       />

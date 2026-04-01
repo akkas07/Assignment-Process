@@ -6,6 +6,8 @@
   z-index: 1000;
 }
 
+
+
 .navbar-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -16,6 +18,8 @@
   justify-content: space-between;
 }
 
+
+
 .logo a {
   font-size: 28px;
   font-weight: 700;
@@ -23,7 +27,8 @@
   text-decoration: none;
 }
 
-/* Desktop Menu */
+
+
 .nav-menu {
   display: flex;
   list-style: none;
@@ -41,7 +46,8 @@
   color: #6b46c1;
 }
 
-/* Right Side */
+
+
 .nav-right {
   display: flex;
   align-items: center;
@@ -103,7 +109,8 @@
   padding: 5px;
 }
 
-/* Mobile Menu */
+
+
 .mobile-menu {
   background: white;
   padding: 20px;
@@ -132,7 +139,8 @@
   font-weight: 600;
 }
 
-/* ================== RESPONSIVE ================== */
+/* responsive --- navbar */
+
 
 @media (max-width: 992px) {
   .nav-menu {
@@ -150,6 +158,8 @@
     padding: 0 15px;
   }
   
+
+
   .logo a {
     font-size: 24px;
   }
@@ -163,6 +173,7 @@
     font-size: 0.95rem;
   }
 }
+
 
 @media (max-width: 480px) {
   .cart-icon {

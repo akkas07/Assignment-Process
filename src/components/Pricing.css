@@ -4,6 +4,7 @@
   text-align: center;
 }
 
+
 .pricing-header h2 {
   font-size: 2.8rem;
   margin-bottom: 10px;
@@ -16,6 +17,7 @@
   max-width: 650px;
   margin: 0 auto 60px;
 }
+
 
 .pricing-cards {
   display: flex;
@@ -137,6 +139,7 @@ h3 {
   cursor: pointer;
   margin-top: 10px;
 }
+
 
 .secondary {
   background: #6d28d9;
