@@ -1,40 +1,38 @@
-.stats {
-  background: linear-gradient(90deg, #6b46c1, #8b5cf6);
-  padding: 50px 20px;
-  color: white;
+/* App.css এর শেষে এগুলো যোগ করো */
+
+* {
+  box-sizing: border-box;
 }
 
-.stats-container {
+.App {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Container utility */
+.container {
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  gap: 80px;
-  flex-wrap: wrap;
+  padding: 0 20px;
 }
 
-.stat-item {
-  text-align: center;
+/* Responsive typography */
+h2 {
+  font-size: 2.2rem;
 }
 
-.stat-number {
-  font-size: 3rem;
-  font-weight: 800;
-  margin: 0 0 8px 0;
-}
-
-.stat-label {
-  font-size: 1.1rem;
-  margin: 0;
-  opacity: 0.9;
-}
-
-/* Mobile responsive */
 @media (max-width: 768px) {
-  .stats-container {
-    gap: 50px;
+  h2 {
+    font-size: 1.8rem;
   }
-  .stat-number {
-    font-size: 2.5rem;
+  
+  .container {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.6rem;
   }
 }
