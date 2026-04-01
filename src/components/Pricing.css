@@ -44,7 +44,7 @@
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
-/* Pro Card - Purple & Elevated */
+
 .pro-card {
   background: #6d28d9;
   color: white;
@@ -71,7 +71,7 @@
   background: #f3e8ff;
 }
 
-/* Popular Badge */
+
 .popular-badge {
   position: absolute;
   top: -14px;
@@ -86,7 +86,7 @@
   box-shadow: 0 4px 12px rgba(234, 179, 8, 0.4);
 }
 
-/* Common Styles */
+
 h3 {
   font-size: 1.65rem;
   margin-bottom: 8px;
@@ -150,7 +150,7 @@ h3 {
   background: #5b21b6;
 }
 
-/* Responsive */
+
 @media (max-width: 1024px) {
   .pro-card {
     transform: translateY(0);

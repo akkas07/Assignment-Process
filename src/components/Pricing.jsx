@@ -11,7 +11,7 @@ const Pricing = () => {
 
 
       <div className="pricing-cards">
-        {/* Starter Card - Left */}
+        
         <div className="pricing-card starter-card">
            <h3>Starter</h3>
             <p className="subtitle">Perfect for getting started</p>
@@ -31,7 +31,7 @@ const Pricing = () => {
            <button className="pricing-btn secondary">Get Started Free</button>
          </div>
 
-        {/* Pro Card - Middle (Popular + Purple) */}
+      
         <div className="pricing-card pro-card">
           <div className="popular-badge">MOST POPULAR</div>
           

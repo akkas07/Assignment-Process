@@ -17,7 +17,7 @@ function HowItWorks() {
     },
     {
       id: "03",
-      icon: "src/assets/play.png",
+      icon: "src/assets/rocket.png",
       title: "Start Creating",
       desc: "Download and start using your tools immediately.",
     },

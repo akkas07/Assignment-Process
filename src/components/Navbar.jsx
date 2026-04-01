@@ -38,7 +38,7 @@ const Navbar = ({ cartCount, onCartClick }) => {
       </div>
 
 
-      {/* Mobile Menu */}
+      
       {isOpen && (
         <ul className="mobile-menu">
             <li><a href="#products" onClick={() => setIsOpen(false)}>Products</a></li>

@@ -22,9 +22,9 @@ const Footer = () => {
         <div className="footer-column">
           <h3>Product</h3>
           <ul>
-            <li>Features</li>
+             <li>Features</li>
             <li>Pricing</li>
-            <li>Templates</li>
+             <li>Templates</li>
             <li>Integrations</li>
           </ul>
         </div>
@@ -35,8 +35,8 @@ const Footer = () => {
           <ul>
             <li>About</li>
             <li>Blog</li>
-            <li>Careers</li>
-            <li>Press</li>
+             <li>Careers</li>
+             <li>Press</li>
           </ul>
         </div>
 
@@ -44,8 +44,8 @@ const Footer = () => {
           <h3>Resources</h3>
           <ul>
             <li>Documentation</li>
-            <li>Help Center</li>
-            <li>Community</li>
+              <li>Help Center</li>
+              <li>Community</li>
             <li>Contact</li>
           </ul>
         </div>
@@ -56,8 +56,8 @@ const Footer = () => {
         <div className="footer-column">
           <h3>Social Links</h3>
           <div className="social-icons">
-            <a href="#" className="social-icon">📸</a>
-            <a href="#" className="social-icon">𝕏</a>
+             <a href="#" className="social-icon">📸</a>
+             <a href="#" className="social-icon">𝕏</a>
             <a href="#" className="social-icon">𝕗</a>
           </div>
         </div>
@@ -72,7 +72,7 @@ const Footer = () => {
           
           <div className="footer-links">
             <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
+             <a href="#">Terms of Service</a>
             <a href="#">Cookies</a>
           </div>
         </div>
