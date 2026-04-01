@@ -1,37 +1,62 @@
 import React from "react";
 import "./CartModal.css";
 
-function CartModal({ isOpen, onClose, cartItems, removeFromCart, totalPrice }) {
+const CartModal = ({ 
+  isOpen, 
+  onClose, 
+  cartItems, 
+  removeFromCart, 
+  totalPrice 
+}) => {
   if (!isOpen) return null;
 
   return (
-    <div className="cart-modal-overlay" onClick={onClose}>
-      <div className="cart-modal" onClick={e => e.stopPropagation()}>
-        <div className="cart-header">
-          <h2>Your Cart ({cartItems.length})</h2>
+    <div className="modal-overlay" onClick={onClose}>
+      <div className="modal-content" onClick={e => e.stopPropagation()}>
+        <div className="modal-header">
+          <h2>Your Cart</h2>
           <button className="close-btn" onClick={onClose}>✕</button>
         </div>
 
-        {cartItems.length === 0 ? (
-          <p className="empty-cart">Cart is empty</p>
-        ) : (
-          <>
-            {cartItems.map(item => (
+        <div className="cart-items">
+          {cartItems.length === 0 ? (
+            <p className="empty-cart">Your cart is empty</p>
+          ) : (
+            cartItems.map((item) => (
               <div key={item.id} className="cart-item">
-                <span>{item.icon} {item.title}</span>
-                <span>${item.price}</span>
-                <button onClick={() => removeFromCart(item.id)} className="remove-btn">Remove</button>
+                <div className="item-info">
+                  <span className="item-icon">{item.icon}</span>
+                  <div>
+                    <h4>{item.name}</h4>
+                    <p>${item.price}</p>
+                  </div>
+                </div>
+                <button 
+                  className="remove-btn"
+                  onClick={() => removeFromCart(item.id)}
+                >
+                  Remove
+                </button>
               </div>
-            ))}
+            ))
+          )}
+        </div>
+
+        {cartItems.length > 0 && (
+          <>
             <div className="cart-total">
-              Total: ${totalPrice}
+              <span>Total:</span>
+              <span className="total-price">${totalPrice}</span>
             </div>
-            <button className="checkout-btn">Proceed To Checkout</button>
+
+            <button className="checkout-btn">
+              Proceed To Checkout
+            </button>
           </>
         )}
       </div>
     </div>
   );
-}
+};
 
 export default CartModal;

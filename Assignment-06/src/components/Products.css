@@ -1,43 +1,37 @@
-.products {
-  padding: 100px 20px;
-  background: #f9fafb;
+.products-section {
+  padding: 60px 20px;
+  background: #f8fafc;
 }
 
 .products-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .products-header h2 {
-  font-size: 2.8rem;
-  color: #111827;
-}
-
-.products-header p {
-  font-size: 1.2rem;
-  color: #6b7280;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
 .products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
   max-width: 1200px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  gap: 30px;
 }
 
 .product-card {
   background: white;
   border-radius: 16px;
-  padding: 28px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  padding: 30px 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   position: relative;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .product-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
 }
 
 .badge {
@@ -45,71 +39,117 @@
   top: 20px;
   right: 20px;
   padding: 6px 14px;
-  font-size: 0.82rem;
-  font-weight: 600;
-  border-radius: 50px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
 }
 
-.best-seller { background: #fef3c7; color: #92400e; }
-.popular { background: #dbeafe; color: #1e40af; }
-.new { background: #ecfdf5; color: #065f46; }
+.badge.best-seller { background: #f59e0b; }
+.badge.popular { background: #8b5cf6; }
+.badge.new { background: #10b981; }
 
 .product-icon {
   font-size: 48px;
-  margin-bottom: 18px;
-  text-align: center;
+  margin-bottom: 15px;
 }
 
-.product-card h3 {
+.product-name {
   font-size: 1.35rem;
-  margin-bottom: 10px;
-  color: #111827;
+  margin: 10px 0;
 }
 
-.product-desc {
-  color: #6b7280;
-  line-height: 1.55;
-  min-height: 70px;
+.product-description {
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
-.product-price {
-  margin: 18px 0;
+.features {
+  margin: 20px 0;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0;
+  font-size: 0.92rem;
+  color: #334155;
 }
 
 .price {
   font-size: 2rem;
-  font-weight: 800;
-  color: #111827;
+  font-weight: bold;
+  color: #4f46e5;
+  margin: 25px 0 20px 0;
 }
 
 .period {
-  color: #6b7280;
   font-size: 1rem;
+  color: #64748b;
+  font-weight: normal;
 }
 
-.features {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0 25px;
-  color: #4b5563;
+.button-group {
+  display: flex;
+  gap: 12px;
 }
 
-.features li {
-  padding: 5px 0;
+.add-to-cart-btn {
+  flex: 1;
+  padding: 14px;
+  background: #6b7280;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+  background: #4b5563;
 }
 
 .buy-now-btn {
-  width: 100%;
-  background: #6b46c1;
-  color: white;
+  flex: 1;
   padding: 14px;
+  background: #7c3aed;
+  color: white;
   border: none;
-  border-radius: 50px;
+  border-radius: 8px;
   font-weight: 600;
-  font-size: 1.05rem;
   cursor: pointer;
 }
 
 .buy-now-btn:hover {
-  background: #553399;
+  background: #6d28d9;
+}
+
+
+
+/* ... আগের সব CSS একই রাখো ... */
+
+.button-group {
+  display: flex;
+  gap: 12px;
+}
+
+/* শুধু Buy Now বাটন থাকবে */
+.buy-now-btn {
+  width: 100%;           /* পুরো কার্ডের চওড়া নেবে */
+  padding: 14px;
+  background: #7c3aed;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.buy-now-btn:hover {
+  background: #6d28d9;
 }
