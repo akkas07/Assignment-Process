@@ -1,3 +1,28 @@
+# DigiTools
+
+## Overview
+DigiTools হলো একটি React + Vite project যেখানে premium digital tools দেখা যায় এবং cart এ যোগ করা যায়।
+
+## Features
+- 🛒 Cart system
+- 🎨 Responsive design
+- ⚡ Modular components (Navbar, Products, CartModal, Cards)
+
+
+#Tools Section এখানে বিভিন্ন ধরনের টুলস নেওয়ার সুযোগ থাকে। কাষ্টমারের প্রয়োজন অনুযারি নিতে পারে ।
+#Seals অনেক ভালো করে দেওয়া আছে। যাগে কিনে নেওয়ার  সময় দাম ঠিক করে নিতে পারে।
+
+# Transparent
+প্রাথমিক ভাবে ফ্রি নেওয়ার সুয়োগ করে দেয়। 
+
+
+
+
+#DigiTools
+শেষে যোগাযোগ করার জন্য অনেক লিংক দেওয়া হয়েছে। 
+যাতে করে কাস্টমার আরও ভালো ভাবে জানতে পারে। 
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
