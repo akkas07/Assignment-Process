@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./App.css";
 
+
+
 // Components
 import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
@@ -11,11 +13,11 @@ import Pricing from "./components/Pricing";
 import Footer from "./components/Footer";
 import CartModal from "./components/CartModal";
 
+
 function App() {
   const [cartItems, setCartItems] = useState([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
 
-// Add to cart function..../
 
 
   const addToCart = (product) => {
@@ -46,12 +48,16 @@ function App() {
     0
   );
 
+
+
  
   const cartCount = cartItems.reduce(
     (total, item) => total + (item.quantity || 1),
     0
   );
 
+
+  
   return (
     <div className="App">
       {/* Navbar */}
