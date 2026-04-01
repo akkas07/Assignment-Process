@@ -8,7 +8,7 @@ import Stats from "./components/Stats";
 import Products from "./components/Products";
 import HowItWorks from "./components/HowItWorks";
 import Pricing from "./components/Pricing";
-import Footer from "./components/Footer";           // নতুন যোগ করা হয়েছে
+import Footer from "./components/Footer";       
 import CartModal from "./components/CartModal";
 
 function App() {
@@ -21,14 +21,14 @@ function App() {
       const existingItem = prev.find((item) => item.id === product.id);
 
       if (existingItem) {
-        // একই প্রোডাক্ট থাকলে quantity বাড়বে
+        
         return prev.map((item) =>
           item.id === product.id
             ? { ...item, quantity: (item.quantity || 1) + 1 }
             : item
         );
       } else {
-        // নতুন প্রোডাক্ট যোগ
+        
         return [...prev, { ...product, quantity: 1 }];
       }
     });

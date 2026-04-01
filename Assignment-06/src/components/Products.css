@@ -129,16 +129,15 @@
 
 
 
-/* ... আগের সব CSS একই রাখো ... */
 
 .button-group {
   display: flex;
   gap: 12px;
 }
 
-/* শুধু Buy Now বাটন থাকবে */
+
 .buy-now-btn {
-  width: 100%;           /* পুরো কার্ডের চওড়া নেবে */
+  width: 100%;           
   padding: 14px;
   background: #7c3aed;
   color: white;
@@ -152,4 +151,32 @@
 
 .buy-now-btn:hover {
   background: #6d28d9;
+
+}
+
+
+
+
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .product-card {
+    padding: 20px 15px;
+  }
+  
+  .button-group {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

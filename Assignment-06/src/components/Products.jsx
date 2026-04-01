@@ -118,7 +118,7 @@ const Products = ({ addToCart }) => {
               ${product.price}<span>/{product.period}</span>
             </div>
 
-            {/* Buy Now Button - Click করলে Cart এ যাবে */}
+          
             <button 
               className="buy-now-btn"
               onClick={() => addToCart(product)}

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Banner.css";
-import bannerImage from "../assets/banner.png"; // src/components থেকে এক ধাপ পিছিয়ে assets এ যাবে
+import bannerImage from "../assets/banner.png"; 
 
 function Banner() {
   return (
